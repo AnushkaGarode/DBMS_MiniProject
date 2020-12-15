@@ -1,0 +1,220 @@
+<?xml version='1.0' encoding='utf-8'?>
+<interface version="1.0">
+  <object class="ttk.Frame" id="mainwindow">
+    <property name="height">500</property>
+    <property name="width">500</property>
+    <layout manager="pack">
+      <property name="propagate">True</property>
+      <property name="side">top</property>
+    </layout>
+    <child>
+      <object class="tk.Canvas" id="canvas">
+        <property name="height">500</property>
+        <property name="width">500</property>
+        <layout manager="place">
+          <property name="anchor">nw</property>
+          <property name="x">0</property>
+          <property name="y">0</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="tk.Message" id="message">
+        <property name="font">{Sans Bold} 18 {}</property>
+        <property name="text" translatable="yes">Enter Details</property>
+        <property name="width">500</property>
+        <layout manager="place">
+          <property name="anchor">center</property>
+          <property name="x">250</property>
+          <property name="y">26</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Label" id="label_1">
+        <property name="font">{Sans} 12 {}</property>
+        <property name="text" translatable="yes">Name</property>
+        <layout manager="place">
+          <property name="anchor">nw</property>
+          <property name="x">10</property>
+          <property name="y">60</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Entry" id="entry_1">
+        <property name="font">{Sans} 12 {}</property>
+        <property name="textvariable">string:user_name</property>
+        <property name="width">39</property>
+        <layout manager="place">
+          <property name="anchor">nw</property>
+          <property name="x">130</property>
+          <property name="y">60</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Label" id="label_2">
+        <property name="font">{Sans} 12 {}</property>
+        <property name="text" translatable="yes">Mobile number</property>
+        <layout manager="place">
+          <property name="anchor">nw</property>
+          <property name="x">10</property>
+          <property name="y">110</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Entry" id="entry_2">
+        <property name="font">{Sans} 12 {}</property>
+        <property name="text" translatable="yes">xxxxxxxxxx</property>
+        <property name="textvariable">string:mobile_no</property>
+        <property name="width">10</property>
+        <layout manager="place">
+          <property name="anchor">nw</property>
+          <property name="x">130</property>
+          <property name="y">110</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Label" id="label_3">
+        <property name="font">{Sans} 12 {}</property>
+        <property name="text" translatable="yes">Email</property>
+        <layout manager="place">
+          <property name="anchor">nw</property>
+          <property name="x">10</property>
+          <property name="y">160</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Entry" id="entry_3">
+        <property name="font">{Sans} 12 {}</property>
+        <property name="textvariable">string:email</property>
+        <property name="width">39</property>
+        <layout manager="place">
+          <property name="anchor">nw</property>
+          <property name="x">130</property>
+          <property name="y">160</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Label" id="label_4">
+        <property name="font">{Sans 12} 12 {}</property>
+        <property name="text" translatable="yes">Blood type</property>
+        <layout manager="place">
+          <property name="anchor">nw</property>
+          <property name="x">10</property>
+          <property name="y">210</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Combobox" id="combobox_1">
+        <property name="textvariable">string:blood_type</property>
+        <property name="values">A+ve B+ve O+ve AB+ve AB-ve O-ve B-ve A-ve </property>
+        <layout manager="place">
+          <property name="anchor">nw</property>
+          <property name="x">130</property>
+          <property name="y">210</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Label" id="label_5">
+        <property name="font">{Sans} 12 {}</property>
+        <property name="text" translatable="yes">Quantity</property>
+        <layout manager="place">
+          <property name="anchor">nw</property>
+          <property name="x">10</property>
+          <property name="y">260</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Spinbox" id="spinbox">
+        <property name="font">{Sans 12} 12 {}</property>
+        <property name="textvariable">string:quantity</property>
+        <property name="width">5</property>
+        <layout manager="place">
+          <property name="anchor">nw</property>
+          <property name="x">130</property>
+          <property name="y">260</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="tk.Message" id="message_2">
+        <property name="font">{Sans} 10 {}</property>
+        <property name="text" translatable="yes">in units
+(1 unit = 552ml)</property>
+        <layout manager="place">
+          <property name="anchor">nw</property>
+          <property name="x">10</property>
+          <property name="y">280</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Label" id="label_6">
+        <property name="font">{Sana} 12 {}</property>
+        <property name="text" translatable="yes">Date</property>
+        <layout manager="place">
+          <property name="anchor">nw</property>
+          <property name="x">10</property>
+          <property name="y">330</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Entry" id="entry_6">
+        <property name="font">{Sans} 12 {}</property>
+        <property name="text" translatable="yes">dd-mm-yyyy</property>
+        <property name="textvariable">string:date</property>
+        <property name="width">10</property>
+        <layout manager="place">
+          <property name="anchor">nw</property>
+          <property name="x">130</property>
+          <property name="y">330</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Label" id="label_7">
+        <property name="font">{Sans} 12 {}</property>
+        <property name="text" translatable="yes">Are you a
+donor?</property>
+        <layout manager="place">
+          <property name="anchor">nw</property>
+          <property name="x">10</property>
+          <property name="y">380</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Combobox" id="combobox_2">
+        <property name="textvariable">string:is_donor</property>
+        <property name="values">True False</property>
+        <property name="width">6</property>
+        <layout manager="place">
+          <property name="anchor">nw</property>
+          <property name="x">130</property>
+          <property name="y">380</property>
+        </layout>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Button" id="button">
+        <property name="command">on_click</property>
+        <property name="text" translatable="yes">Submit</property>
+        <layout manager="place">
+          <property name="anchor">nw</property>
+          <property name="x">250</property>
+          <property name="y">460</property>
+        </layout>
+      </object>
+    </child>
+  </object>
+</interface>
